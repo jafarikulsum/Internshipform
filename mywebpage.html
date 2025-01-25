@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="mywebpage.css">
+</head>
+<body>
+    <h1>Internship Form</h1>
+    <form id="internshipForm" method="POST">
+        <p>Enter Your Name:</p>
+        <input type="text" name="Name" required/>
+        <p>Enter Your Email:</p>
+        <input type="email" name="Email" required/>
+        <p>Enter Your Password:</p>
+        <input type="password" name="Password" required/>
+        <p>Enter Your Age:</p>
+        <input type="number" name="Age" required>
+        <p>Enter Your Number:</p>
+        <input type="number" name="Phone Number" required/>
+        <p>Gender:</p>
+        <input type="radio" name="gender" value="male" required/>Male<br/>
+        <input type="radio" name="gender" value="female" required/>Female<br/>
+        <p>About Yourself</p>
+        <textarea rows="2" cols="20" name="description"></textarea>
+        <p>Which programming language do you know?</p>
+        <input type="checkbox" name="language" value="C"/>C<br/>
+        <input type="checkbox" name="language" value="C++"/>C++<br/>
+        <input type="checkbox" name="language" value="Java"/>Java<br/>
+        <input type="checkbox" name="language" value="Python"/>Python<br/>
+        <input type="checkbox" name="language" value="Javascript"/>Javascript<br/>
+        <p>How many months you want to participate in our Internship Program?</p>
+        <select name="dropdown">
+            <option value="3 Months">3 Months</option>
+            <option value="6 Months">6 Months</option>
+            <option value="9 Months">9 Months</option>
+            <option value="1 Year">1 Year</option>
+        </select>
+        <p>Upload your Resume</p>
+        <input type="file" name="fileupload" accept="document/*"/>
+        <p></p>
+        <input type="button" name="submit" value="Submit" onclick="submitForm()"/>
+    </form>
+
+    <!-- Success message -->
+    <p id="successMessage" style="display: none; color: green; text-align: center; font-weight: bold;">
+        Your Application is successfully submitted!
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
